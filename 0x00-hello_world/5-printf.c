@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - print string 
+ *main - print string
  *Description: balbla
  *Return: return 0
  */
