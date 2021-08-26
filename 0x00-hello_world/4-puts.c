@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- *using puts to print string
+ *main - print string
+ *Description: LONG
+ *Return: return null
  */
 int main(void)
 {
