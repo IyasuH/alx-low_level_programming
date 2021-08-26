@@ -2,7 +2,7 @@
 
 int main(void)
 {
-  // using puts to print string
+  /* using puts to print string */
   char mystr[] = "\"Programming is like building a multilingual puzzle";
   
   puts(mystr);
