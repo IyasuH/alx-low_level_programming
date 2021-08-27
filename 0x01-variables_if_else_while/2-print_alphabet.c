@@ -32,6 +32,6 @@ putchar('w');
 putchar('x');
 putchar('y');
 putchar('z');
-putchar('\n')
+putchar('\n');
 return (0);
 }
