@@ -1,0 +1,9 @@
+#include<stdio.h>
+/**
+ *main - print string
+ *Description: long
+ *Return: return null
+ */
+int main(void){
+  
+}
