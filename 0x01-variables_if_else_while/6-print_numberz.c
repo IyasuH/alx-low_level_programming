@@ -7,7 +7,7 @@
 int main(void)
 {
 int ccc;
-for(ccc = '0'; ccc <= '9'; ccc++)
+for (ccc = '0'; ccc <= '9'; ccc++)
 {
 putchar(ccc);
 }
