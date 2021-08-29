@@ -1,14 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- *main - print string
+ *main - print
  *Description: long
- *Return: return null
+ *Return null
  */
-int main(void){
+int main(void)
 {
 int nu = (0);
 int num = (123456789);
 printf("%d%d\n", nu, num);
-}
-return 0;
+return(0);
 }
