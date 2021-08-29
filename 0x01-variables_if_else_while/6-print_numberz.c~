@@ -1,0 +1,14 @@
+#include<stdio.h>
+/**
+ *main - putchar only
+ *Description: no pritnf
+ *Return: null
+ */
+int main(void)
+{
+int n = (0);
+int nu = (123456789);
+putchar("%n%nu", n, nu);
+putchar('\n');
+return (0);
+}
