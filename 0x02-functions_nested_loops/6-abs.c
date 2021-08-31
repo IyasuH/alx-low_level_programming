@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *_abs - compute abs
- *@n: int 
- *Return: int 
+ *@n: int
+ *Return: int
  */
 int _abs(int n)
 {
