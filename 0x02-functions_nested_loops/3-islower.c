@@ -8,9 +8,10 @@
  */
 int _islower(int c)
 {
+  int a;
 if(c>64&&c<91)
-_putchar('0');
+a = 0;
 else
-_putchar('1');
-return (0);
+a = 1;
+return (a);
 }
