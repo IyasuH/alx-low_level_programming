@@ -8,8 +8,8 @@
  */
 int _islower(int c)
 {
-  int a;
-if((c<123&&c>96))
+int a;
+if (c < 123 && c > 96)
 a = 1;
 else
 a = 0;
