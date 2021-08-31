@@ -13,7 +13,7 @@ if (n > 0)
 a = 1;
 _putchar('+');
 }
-if (n < 0)
+else if (n < 0)
 {
 a = -1;
 _putchar('-');
