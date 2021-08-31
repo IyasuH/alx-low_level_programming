@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *_islower - checks on lowercase chars
- *@c: char to print 
+ *@c: char to print
  *
  *Return: int
  */
