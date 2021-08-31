@@ -1,5 +1,4 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include "main.h"
 /**
  *main - print
  *Description: prints Holberton
@@ -7,6 +6,12 @@
  */
 int main(void)
 {
-printf("_putchar\n");
+int i;
+char c[10] = "Holberton";
+for(i = 0; i < 10; i++)
+{
+_putchar(c[i]);
+}
+_putchar('\n');
 return (0);
 }
