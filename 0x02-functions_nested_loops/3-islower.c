@@ -9,9 +9,9 @@
 int _islower(int c)
 {
   int a;
-if(c>64&&c<91)
-a = 0;
-else
+if(!(c>64&&c<91))
 a = 1;
+else
+a = 0;
 return (a);
 }
