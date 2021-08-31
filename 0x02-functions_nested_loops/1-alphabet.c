@@ -1,10 +1,15 @@
-#include<stio.h>
+#include "main.h"
 /**
- *main - bala
+ * main - bala
+ * print_alphabet - some
  *Description: abcd... 
  *Return: null
  */
-int main()
+void print_alphabet(void)
 {
-  
+char ch;
+for (ch='a'; ch <= 'z'; ch++){
+_putchar(ch);
+}
+_putchar('\n');
 }
