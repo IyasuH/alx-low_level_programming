@@ -1,0 +1,10 @@
+#include<stdlib.h>
+/**
+ *main - combination
+ *Description: combination between any 2 numbers
+ *Return: null
+ */
+int main()
+{
+  
+}
