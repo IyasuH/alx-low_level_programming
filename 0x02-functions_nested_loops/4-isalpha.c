@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *_isalpha - check alpha
+ * @c: char
  *
  *Return: int
  */
