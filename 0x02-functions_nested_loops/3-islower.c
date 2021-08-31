@@ -1,0 +1,16 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ *_islower - checks on lowercase chars
+ *@c: char to print 
+ *
+ *Return: int
+ */
+int _islower(int c)
+{
+if(c>64&&c<91)
+_putchar('0');
+else
+_putchar('1');
+return (0);
+}
