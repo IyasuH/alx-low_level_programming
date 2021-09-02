@@ -6,8 +6,8 @@
  *Return: null
  */
 void print_square(int size)
-if (n > 0)
 {
+if (size > 0)
 {
 int i;
 int j;
