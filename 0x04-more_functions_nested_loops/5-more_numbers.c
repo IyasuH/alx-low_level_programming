@@ -11,7 +11,7 @@ int a;
 int b;
 int i;
 char *c = "1011121314";
-for (a = 0; a < 9; a++)
+for (a = 0; a < 10; a++)
 {
 for (b = 0; b <= 9; b++)
 _putchar(b + 48);
