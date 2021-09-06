@@ -9,4 +9,5 @@
 void _puts(char *str)
 {
 fprintf(stdout, str, '\n');
+putchar('\n');
 }
