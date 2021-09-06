@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *void _puts - func
+ *_puts - func
  *@str: char
  *
  *Return : null
