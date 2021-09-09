@@ -8,6 +8,6 @@ int _putchar(char c);
 int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 char *cap_string(char *);
-char *srring_toupper(char *ch);
+char *string_toupper(char *ch);
 
 #endif
