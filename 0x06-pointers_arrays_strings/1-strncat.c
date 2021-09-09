@@ -13,11 +13,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-int i;
-int a = strlen(dest);
-int b = strlen(src);
-char c[a+(b - n - b)];
-for(i = 0; i < n; i++)
-c = strcat(dest, src[i]);
+char *c;
+c = strncat(dest, src, n);
 return (c);
 }
