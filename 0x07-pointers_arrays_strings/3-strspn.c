@@ -4,8 +4,8 @@
 
 /**
  *_strspn - function
- *@s:
- *@accept:
+ *@s: char 1
+ *@accept: char 2
  *
  *Return: unsigned int
  */
@@ -13,8 +13,10 @@ unsigned int _strspn(char *s, char *accept)
 {
 int i, j;
 
-for (i = 0; s[i]; i++) {
-for (j = 0; accept[j]; j++) {
+for (i = 0; s[i]; i++)
+{
+for (j = 0; accept[j]; j++)
+{
 if (accept[j] == s[i])
 break;
 }

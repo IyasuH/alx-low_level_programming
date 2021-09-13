@@ -16,9 +16,9 @@ while (*s != '\0')
 const char *a = accept;
 while (*a != '\0')
 if (*a++ == *s)
-return (char *) s;
+return ((char *)s);
 ++s;
 }
 
-return (NULL);
+return (0);
 }
