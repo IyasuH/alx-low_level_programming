@@ -10,20 +10,25 @@
  */
 char *_strstr(char *s, char *find)
 {
-char c, sc;
-size_t len;
-c = *find++;
-sc = *s++;
-if (c != 0)
+register char *a, *b;
+
+
+b = find;
+if (*b == 0)
+return (s);
+for ( ; *s != 0; s += 1)
 {
-len = strlen(find);
-do {
-do {
-if (sc == 0)
-return (NULL);
-} while (sc != c);
-} while (strncmp(s, find, len) != 0);
-s--;
+if (*s != *b)
+continue;
+a = s;
+while (1)
+{
+if (*b == 0)
+return (s);
+if (*a++ != *b++)
+break;
 }
-return ((char *)s);
+b = find;
+}
+return (NULL);
 }
