@@ -2,20 +2,28 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *_strstr: function
- *@haystack: char 1
- *@needle: char2
+ *_strstr - function
+ *@s: char 1
+ *@find: char2
  *
  *Return: char type
  */
-char *_strstr(char *haystack, char *needle)
+char *_strstr(char *s, char *find)
 {
-const char *p = haystack;
-const size_t len = strlen(needle);
-for (; (p = strchr(p, *needle)) != 0; p++)
+char c, sc;
+size_t len;
+c = *find++;
+sc = *s++;
+if (c != 0)
 {
-if (strncmp(p, needle, len) == 0)
-return ((char *)p);
+len = strlen(find);
+do {
+do {
+if (sc == 0)
+return (NULL);
+} while (sc != c);
+} while (strncmp(s, find, len) != 0);
+s--;
 }
-return (0);
+return ((char *)s);
 }
