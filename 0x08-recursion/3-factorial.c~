@@ -1,0 +1,14 @@
+#include "main.h"
+#include <string.h>
+#include <stdio.h>
+
+/**
+ *factorial - function
+ *
+ *@n: char 1
+ *Return: int type
+ */
+void _puts_recursion(char *s)
+{
+  return();
+}
