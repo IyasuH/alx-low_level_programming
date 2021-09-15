@@ -5,10 +5,14 @@
 /**
  *factorial - function
  *
- *@n: char 1
+ *@n: int 1
  *Return: int type
  */
-int _puts_recursion(int n)
+int factorial(int n)
 {
-  return();
+if(n == 0)
+{
+return(1);
+}
+return(n * factorial(n - 1));
 }
