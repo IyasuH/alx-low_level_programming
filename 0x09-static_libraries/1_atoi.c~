@@ -1,0 +1,11 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ *_atoi - func
+ *@s: char
+ *
+ *Return : int
+ */
+int _atoi(char *s)
+{
+}
