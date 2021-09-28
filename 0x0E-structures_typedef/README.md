@@ -1,0 +1,1 @@
+## about structures and typedef
