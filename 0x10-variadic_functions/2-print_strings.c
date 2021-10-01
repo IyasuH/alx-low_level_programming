@@ -21,7 +21,7 @@ v = va_arg(ap, char*);
 if (v != NULL)
 printf("%s", v);
 else
-printf("nil");
+printf("(nil)");
 if (i < n - 1 && separator != NULL)
 printf("%s", separator);
 }
