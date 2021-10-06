@@ -27,4 +27,5 @@ return (NULL);
 }
 else
 return (NULL);
+free(ar);
 }
