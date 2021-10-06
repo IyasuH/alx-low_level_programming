@@ -21,6 +21,8 @@ i++;
 ar[i] = '\0';
 if (size != 0 && ar != NULL)
 return (ar);
+else if(ar == NULL)
+return (NULL);
 else
 return (NULL);
 }
