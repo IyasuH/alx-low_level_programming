@@ -11,6 +11,7 @@
 size_t print_list(const list_t *h)
 {
 size_t n = 0;
+const list_t *tmp = h;
 if (h->next != NULL)
 {
 if (h->str != NULL)
@@ -22,8 +23,9 @@ h = h->next;
 n++;
 }
 return (n);
-if (h->str == NULL && h->next == NULL)
-return (0);
+if (tmp == NULL)
+  return (1);
+ return (0);
 }
 else
 {
@@ -39,8 +41,9 @@ n += 1;
 return (n);
 }
 }
-if (h->str == NULL && h->next == NULL)
-return (0);
+ if (tmp == NULL)
+   return (1);
+ return (0);
 }
 return (1);
 }
