@@ -22,7 +22,7 @@ h = h->next;
 n++;
 }
 return (n);
-if (h == NULL)
+if (&h == NULL)
 return (0);
 }
 else
@@ -39,8 +39,8 @@ n += 1;
 return (n);
 }
 }
-if (h == NULL)
+if (&h == NULL)
 return (0);
 }
-return (0);
+return (1);
 }
