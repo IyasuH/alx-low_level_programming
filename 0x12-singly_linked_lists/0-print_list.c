@@ -20,9 +20,8 @@ while (h != NULL)
 printf("[%d] %s\n", (h->len), h->str);
 h = h->next;
 n++;
-if (h == NULL)
-return (n);
 }
+return (n);
 if (h == NULL)
 return (0);
 }
