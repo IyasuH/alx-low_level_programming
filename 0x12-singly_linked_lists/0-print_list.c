@@ -42,5 +42,5 @@ return (n);
 if (h == NULL)
 return (0);
 }
-return (1);
+return (0);
 }
