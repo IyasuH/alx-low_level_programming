@@ -20,10 +20,11 @@ while (h != NULL)
 printf("[%d] %s\n", (h->len), h->str);
 h = h->next;
 n++;
-}
-return (n);
 if (h == NULL)
-return (1);
+return (n);
+}
+if (h == NULL)
+return (0);
 }
 else
 {
@@ -36,11 +37,11 @@ h = h->next;
 printf("[%d] %s\n", (h->len), h->str);
 h = h->next;
 n += 1;
-}
-}
 return (n);
-if (h == NULL)
-return (1);
 }
- return (1);
+}
+if (h == NULL)
+return (0);
+}
+return (1);
 }
