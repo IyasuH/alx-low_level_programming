@@ -9,6 +9,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
+const listint_t *tmp = h;
 size_t a = 0;
 if (h->next != NULL)
 {
@@ -19,6 +20,9 @@ h = h->next;
 a++;
 }
 return (a);
+if (tmp == NULL)
+return(1);
+return(0);
 }
 return (1);
 }
