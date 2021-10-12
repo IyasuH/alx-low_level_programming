@@ -1,0 +1,25 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include "lists.h"
+/**
+ *add_node_end - function that adds anew node at the beginning of a list_t list
+ *@head: list_t
+ *@str: const char
+ *Return: the address of the new element or NULL
+ */
+list_t *add_node_end(list_t **head, const char *str)
+{
+struct list_s *newnode = malloc(sizeof(struct list_s));
+if (newnode != NULL)
+{
+newnode->str = strdup(str);
+newnode->next = NULL;
+newnode->len = strlen(str);
+if (*head == NULL)
+*head = newnode;
+return (*head);
+}
+else
+return (NULL);
+}
