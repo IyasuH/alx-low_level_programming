@@ -16,6 +16,8 @@ if (text_content)
 while (text_content[i] == '\0')
 i++;
 writ = write(fd, text_content, i);
+if (writ > i || writ < i)
+return(-1);
 }
 if (fd == -1 || filename == NULL || writ == -1)
 {
