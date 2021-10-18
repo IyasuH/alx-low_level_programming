@@ -13,7 +13,7 @@ int i = 0;
 int fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 if (text_content)
 {
-while (text_content[i] == '\0')
+while (text_content[i])
 i++;
 writ = write(fd, text_content, i);
 if (writ != i)
