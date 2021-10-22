@@ -3,7 +3,7 @@
 /**
  *main - a function that will copy f1 to f2
  *@argc: the number of argument
-0;136;0c *@argv: argument chararter
+ *@argv: argument chararter
  *Return: number
  */
 int main(int argc, char *argv[])
