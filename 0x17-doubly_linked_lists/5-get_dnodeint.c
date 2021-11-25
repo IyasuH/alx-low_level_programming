@@ -13,7 +13,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 unsigned int a = 0;
-struct dlistint_s *b = head, *new = head, *e = head;
+struct dlistint_s *b = head, *new = head;
 int c = 0, d = 0;
 while (head != NULL)
 {
@@ -32,15 +32,13 @@ new = new->prev;
 if (a == index)
 {
 d = 1;
-e->n = head->n;
+b->n = head->n;
 }
 }
-if (c == 1)
+if (c == 1 || d == 1)
 {
 return (b);
 }
-else if (d == 1)
-return (e);
 else
 return (NULL);
 }
