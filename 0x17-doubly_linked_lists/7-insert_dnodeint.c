@@ -30,5 +30,5 @@ temp->prev = qtr;
 if (qtr->next != NULL)
 qtr->next->prev = temp;
 qtr->next = temp;
-return (*h);
+return (temp);
 }
