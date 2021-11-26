@@ -27,6 +27,8 @@ b->n = head->n;
 head = head->next;
 a++;
 }
+if (head == NULL && index == 0)
+return (NULL);
 if (c == 1 || d == 1)
 {
 return (b);
