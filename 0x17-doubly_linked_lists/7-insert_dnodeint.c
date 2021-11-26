@@ -4,6 +4,26 @@
 #include "lists.h"
 
 /**
+ * length - to calculate the length of the list
+ * since we canot use the question number 1's their problem not mine
+ * @head: the head of list
+ *
+ * Return: the length of list
+ */
+
+int length(dlistint_t *head)
+{
+struct dlistint_s *temp = head;
+unsigned int count = 0;
+while (temp != NULL)
+{
+count++;
+temp = temp->next;
+}
+return (count);
+}
+
+/**
  * insert_dnodeint_at_index - func that inserts a new node at a given position
  * @h: head
  * @idx: position for new node to be insetred
@@ -16,10 +36,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int new)
 {
 struct dlistint_s *temp = malloc(sizeof(struct dlistint_s)), *qtr;
 unsigned int len = 0;
-size_t a = 0;
-a = dlistint_len(*h);
-while (--a)
-len++;
+len = length(*h);
 if (idx > len)
 return (NULL);
 if (temp == NULL)
