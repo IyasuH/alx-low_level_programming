@@ -15,7 +15,9 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int new)
 {
 struct dlistint_s *temp = malloc(sizeof(struct dlistint_s)), *qtr;
-if (idx == 0 && temp != NULL)
+if (temp == NULL)
+return (NULL);
+if (idx == 0)
 {
 temp->n = new;
 temp->prev = NULL;
@@ -27,10 +29,6 @@ temp->prev = qtr;
 qtr->next = temp;
 return (temp);
 }
-else
-{
-if (temp == NULL)
-return (NULL);
 else
 {
 temp->n = new;
@@ -47,6 +45,5 @@ if (qtr->next != NULL)
 qtr->next->prev = temp;
 qtr->next = temp;
 return (temp);
-}
 }
 }
