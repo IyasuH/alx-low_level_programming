@@ -11,18 +11,18 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, int new)
 {
-struct dlistint_s *temp = malloc(sizeof(struct dlistint_s));
-temp->n = new;
-temp->prev = NULL;
-temp->next = NULL;
+struct dlistint_s *add = malloc(sizeof(struct dlistint_s));
+add->n = new;
+add->prev = NULL;
+add->next = NULL;
 
 if (*head == NULL)
-(*head) = temp;
+(*head) = add;
 else
 {
-temp->next = (*head);
-(*head)->prev = temp;
-(*head) = temp;
+(*head)->prev = add;
+add->next = (*head);
+(*head) = add;
 }
-return (temp);
+return (add);
 }
