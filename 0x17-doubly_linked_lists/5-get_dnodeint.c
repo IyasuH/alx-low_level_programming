@@ -19,13 +19,13 @@ while (head->prev != NULL)
 head = head->prev;
 while (head != NULL)
 {
-head = head->next;
-a++;
 if (a == index)
 {
 c = 1;
 b->n = head->n;
 }
+head = head->next;
+a++;
 }
 if (c == 1 || d == 1)
 {

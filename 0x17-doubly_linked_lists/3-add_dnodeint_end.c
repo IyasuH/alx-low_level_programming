@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * add_dnodeint - a function adds a new node at the end of list
+ * add_dnodeint_end - a function adds a new node at the end of list
  * @head: the head of the list
  * @new: the value that will be add
  *
