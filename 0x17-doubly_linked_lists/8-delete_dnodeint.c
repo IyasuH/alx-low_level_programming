@@ -12,5 +12,17 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-  
+struct dlistint_s *current;
+unsigned int i;
+current = (*head);
+for (i = 0; i < index && current != NULL; i++)
+current = current->next;
+if (current != NULL)
+{
+current->prev->next = current->next;
+current->next->prev = current->prev;
+return (1);
+}
+else
+return (-1);
 }
