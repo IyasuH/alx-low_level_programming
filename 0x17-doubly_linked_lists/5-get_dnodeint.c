@@ -15,8 +15,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 unsigned int a = 0;
 struct dlistint_s *b = head;
 int c = 0, d = 0;
-while (head->prev != NULL)
-head = head->prev;
+
 while (head != NULL)
 {
 if (a == index)
@@ -27,8 +26,6 @@ b->n = head->n;
 head = head->next;
 a++;
 }
-if (head == NULL && index == 0)
-return (NULL);
 if (c == 1 || d == 1)
 {
 return (b);
