@@ -15,15 +15,15 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int new)
 {
 struct dlistint_s *temp = malloc(sizeof(struct dlistint_s)), *qtr;
-temp->n = new;
-temp->prev = NULL;
-temp->next = NULL;
 if (idx < 1)
 return (NULL);
 else
 {
 if (temp == NULL)
 return (NULL);
+temp->n = new;
+temp->prev = NULL;
+temp->next = NULL;
 qtr = (*h);
 while (--idx)
 {
