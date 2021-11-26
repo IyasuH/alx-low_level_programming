@@ -11,22 +11,23 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t  **head, const int new)
 {
-struct dlistint_s *temp = malloc(sizeof(struct dlistint_s));
-temp->n = new;
-temp->prev = NULL;
-temp->next = NULL;
+struct dlistint_s *add = malloc(sizeof(struct dlistint_s)), *ptr;
+if (add == NULL)
+return (NULL);
+add->n = new;
+add->prev = NULL;
+add->next = NULL;
 if (*head == NULL)
 {
-(*head) = temp;
+(*head) = add;
 }
 else
 {
-struct dlistint_s *ptr;
 ptr = (*head);
 while (ptr->next != NULL)
 ptr = ptr->next;
-temp->prev = ptr;
-ptr->next = temp;
+add->prev = ptr;
+ptr->next = add;
 }
-return (temp);
+return (add);
 }
