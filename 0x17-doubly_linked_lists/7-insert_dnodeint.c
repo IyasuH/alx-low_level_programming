@@ -19,14 +19,7 @@ if (temp == NULL)
 return (NULL);
 if (idx == 0)
 {
-temp->n = new;
-temp->prev = NULL;
-temp->next = NULL;
-qtr = (*h);
-qtr = qtr->next;
-temp->next = qtr->next;
-temp->prev = qtr;
-qtr->next = temp;
+temp = add_dnodeint(h, new);
 return (temp);
 }
 else
