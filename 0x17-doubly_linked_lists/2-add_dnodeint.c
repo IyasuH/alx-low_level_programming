@@ -15,8 +15,7 @@ struct dlistint_s *temp = malloc(sizeof(struct dlistint_s));
 temp->n = new;
 temp->prev = NULL;
 temp->next = NULL;
-if(temp != NULL)
-{
+
 if (*head == NULL)
 (*head) = temp;
 else
@@ -25,10 +24,5 @@ temp->next = (*head);
 (*head)->prev = temp;
 (*head) = temp;
 }
-free (temp);
-return (*head);
-}
-else
-free (temp);
-return (NULL);
+return (temp);
 }
