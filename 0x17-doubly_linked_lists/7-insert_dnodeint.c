@@ -15,6 +15,13 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int new)
 {
 struct dlistint_s *temp = malloc(sizeof(struct dlistint_s)), *qtr;
+unsigned int len = 0;
+size_t a = 0;
+a = dlistint_len(*h);
+while (--a)
+len++;
+if (idx > len)
+return (NULL);
 if (temp == NULL)
 return (NULL);
 if (idx == 0)
