@@ -37,9 +37,9 @@ node->value = strdup(value);
 node->key = strdup(key);
 node->next = NULL;
 
-if(ht->array[indx] != NULL)
+if (ht->array[indx] != NULL)
 node->next = ht->array[indx];
- 
+
 ht->array[indx] = node;
 return (1);
 }
