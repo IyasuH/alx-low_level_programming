@@ -15,7 +15,6 @@ struct hash_node_s *node;
 struct hash_node_s *temp;
 unsigned long int indx;
 temp = malloc(sizeof(hash_node_t));
-node = malloc(sizeof(hash_node_t));
 if (ht == NULL || key == NULL)
 return (0);
 indx = key_index((const unsigned char *)key, ht->size);
@@ -30,7 +29,7 @@ return (1);
 }
 temp = temp->next;
 }
-
+node = malloc(sizeof(hash_node_t *));
 if (node == NULL)
 return (0);
 
