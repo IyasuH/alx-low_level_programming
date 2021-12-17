@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-0;136;0c
 /**
  * key_index - function that gives the index of a key
  * @key: the key
