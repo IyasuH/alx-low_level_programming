@@ -9,10 +9,15 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
+  /**
+   * first define a pointer and its memory allocation
+   * then define for size and array
+   * then loop for adding NULL in the array for the given size
+   */
 unsigned long int i;
 hash_table_t *newtable;
 newtable = malloc(sizeof(hash_table_t));
-if(size == 0)
+if (size == 0)
 return (NULL);
 if (newtable == NULL)
 return (NULL);
