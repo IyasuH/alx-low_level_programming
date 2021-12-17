@@ -11,8 +11,8 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-struct hash_node_s *node;
-struct hash_node_s *temp;
+hash_node_t *node;
+hash_node_t *temp;
 unsigned long int indx;
 temp = malloc(sizeof(hash_node_t));
 if (ht == NULL || key == NULL)
@@ -37,8 +37,8 @@ node->value = strdup(value);
 node->key = strdup(key);
 node->next = NULL;
 
-if(ht->array[index] != NULL)
-node->next = ht->array[index];
+if(ht->array[indx] != NULL)
+node->next = ht->array[indx];
  
 ht->array[indx] = node;
 return (1);
