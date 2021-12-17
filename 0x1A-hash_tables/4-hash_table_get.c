@@ -21,7 +21,7 @@ while (ht->size > indx)
 temp = ht->array[indx];
 while (temp != NULL)
 {
-/* ifwe find key throuh runing in the table*/
+/* if we find key throuh runing in the table*/
 if (strcmp(temp->key, key) == 0)
 return (temp->value);
 temp = temp->next;
