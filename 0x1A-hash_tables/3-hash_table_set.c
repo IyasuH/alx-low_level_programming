@@ -41,6 +41,6 @@ node->next = NULL;
 if(ht->array[index] != NULL)
 node->next = ht->array[index];
  
-ht->array[0] = temp;
+ht->array[indx] = node;
 return (1);
 }
