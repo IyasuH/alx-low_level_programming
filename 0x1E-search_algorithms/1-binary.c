@@ -46,10 +46,12 @@ int iterBinary(int *array, int start_index, int end_index, int value)
 		if (value > array[mid])
 		{
 			start_index = mid + 1;
+			if (start_index <= end_index){
 			printf("Searching in array: ");
 			for (x = start_index; x < end_index; x++)
 				printf("%d, ", array[x]);
 			printf("%d\n", array[end_index]);
+			}
 		}
 		else
 		{
