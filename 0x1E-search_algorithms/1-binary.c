@@ -34,25 +34,25 @@ int iterBinary(int *array, int start_index, int end_index, int value)
 	int mid;
 	int x;
 
-	while (start_index <= end_index)
+	while (start_index < end_index)
 	{
 		mid = start_index + (end_index - start_index) / 2;
-		if (value ==  array[mid])
+		if (value == array[mid])
 		{
 			return (mid);
 		}
-		else if (value > array[mid])
+		if (value > array[mid])
 		{
-			printf("Searching in array: ");
 			start_index = mid + 1;
+			printf("Searching in array: ");
 			for (x = start_index; x < end_index; x++)
 				printf("%d, ", array[x]);
 			printf("%d\n", array[end_index]);
 		}
-		else if (value < array[mid])
+		else
 		{
-			printf("Searching in array: ");
 			end_index = mid - 1;
+			printf("Searching in array: ");
 			for (x = start_index; x < end_index; x++)
 				printf("%d, ", array[x]);
 			printf("%d\n", array[end_index]);
