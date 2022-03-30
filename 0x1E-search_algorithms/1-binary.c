@@ -12,31 +12,51 @@
 int binary_search(int *array, size_t size, int value)
 {
 	size_t x;
+
 	printf("Searching in args: ");
-	for (x=0; x<size; x++)
+	for (x = 0; x < size - 1; x++)
 		printf("%d, ", array[x]);
-	printf("\n");
-	return iterBinary(array, 0, size, value);
+	printf("%d\n", array[size - 1]);
+	return (iterBinary(array, 0, size - 1, value));
 }
 
-int iterBinary(int *array, int start_index, int end_index, int value){
+/**
+ * iterBinary - iterating untill start_index equals
+ * end_index where the array is done
+ * @array: Array to be iterated
+ * @start_index: is the lowest value
+ * @end_index: is the highest value
+ * @value: the value to be searched
+ * Return: the index where value is located
+ */
+int iterBinary(int *array, int start_index, int end_index, int value)
+{
+	int mid;
 	int x;
-	printf("Searching in array: ");
-	if (end_index >= start_index){
-		int middle = start_index + (end_index - start_index)/2;
-		if (array[middle] == value)
-			return value;
-		if (array[middle] > value)
+
+	while (start_index <= end_index)
+	{
+		mid = start_index + (end_index - start_index) / 2;
+		if (value ==  array[mid])
 		{
-			for (x=start_index; x<=middle-2; x++)
-				printf("%d, ", array[x]);
-			printf("\n");
-			return iterBinary(array, start_index, middle-1, value);
+			return (mid);
 		}
-		for (x=middle+1; x<=end_index-1; x++)
-			printf("%d, ", array[x]);
-		printf("\n");
-		return iterBinary(array, middle+1, end_index, value);
+		else if (value > array[mid])
+		{
+			printf("Searching in array: ");
+			start_index = mid + 1;
+			for (x = start_index; x < end_index; x++)
+				printf("%d, ", array[x]);
+			printf("%d\n", array[end_index]);
+		}
+		else if (value < array[mid])
+		{
+			printf("Searching in array: ");
+			end_index = mid - 1;
+			for (x = start_index; x < end_index; x++)
+				printf("%d, ", array[x]);
+			printf("%d\n", array[end_index]);
+		}
 	}
 	return (-1);
 }
