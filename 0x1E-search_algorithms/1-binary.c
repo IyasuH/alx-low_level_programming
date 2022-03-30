@@ -36,7 +36,7 @@ int iterBinary(int *array, int start_index, int end_index, int value)
 	int mid;
 	int x;
 
-	while (start_index < end_index)
+	while (start_index <= end_index)
 	{
 		mid = start_index + (end_index - start_index) / 2;
 		if (value == array[mid])
